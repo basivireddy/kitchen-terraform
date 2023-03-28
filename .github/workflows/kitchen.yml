@@ -44,7 +44,7 @@ jobs:
           cp my-first-project-298218-7e25767dcc93.json ./test/fixtures/secrets/
           cp ./code/kitchen.yml .
       # setup gcloud in the image so that we can use with local controller
-      - uses: google-github-actions/setup-gcloud@master
+      - uses: google-github-actions/setup-gcloud@v1
         with:
           service_account_key: ${{ secrets.SA_KEY }}
       # Run Kitchen tests 
